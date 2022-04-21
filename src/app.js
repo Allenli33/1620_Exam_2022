@@ -61,11 +61,30 @@ for (contact in contactsList) {
   console.log(contact)
 }
 }
-const img = document.querySelector('img')
-img.onclick = () => {
-  console.log('clicked')
-}
+const image =`<div class="images">
+<img src="aramaki.jpg" alt="aramaki">
+<img src="batou.png" alt="batou">
+<img src="ishikawa.png" alt="ishikawa">
+<img src="motoko.png" alt="motoko">
+<img src="saito.png" alt="saito">
+<img src="tachikoma.png" alt="tachikoma">
+<img src="togusa.png" alt="togusa">`
+contact.appendChild(image)
 
 //display card
 
 const displaycard = document.querySelector('#display_single_contact')
+
+
+function displaycard(evt) {
+
+
+//cancel icon
+
+const cancel = document.querySelector("icon");
+function Cancel() {
+	img.remove();
+	Cantact.remove();
+	document.getElementById("icon").remove();
+	addcard.appendChild(addCard);
+}
