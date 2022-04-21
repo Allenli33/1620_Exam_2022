@@ -52,3 +52,7 @@ const contactsList = [
 ]
 
 // Your code goes here
+//add card to contactlist
+const addcard = document.querySelector('#display_all_contacts')
+
+//display card
