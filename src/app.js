@@ -54,5 +54,18 @@ const contactsList = [
 // Your code goes here
 //add card to contactlist
 const addcard = document.querySelector('#display_all_contacts')
+contact = {}
+
+function addCard() {
+for (contact in contactsList) {
+  console.log(contact)
+}
+}
+const img = document.querySelector('img')
+img.onclick = () => {
+  console.log('clicked')
+}
 
 //display card
+
+const displaycard = document.querySelector('#display_single_contact')
